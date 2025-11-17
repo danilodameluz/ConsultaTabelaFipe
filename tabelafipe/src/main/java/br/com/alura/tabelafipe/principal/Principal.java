@@ -23,6 +23,7 @@ public class Principal {
 
     public void getMenu(){
         var menu = """
+                Olá, Bem vindo a consulta de valores de Veículos.
                 *** MENU ***
                 1 - Carros
                 2 - Motos
