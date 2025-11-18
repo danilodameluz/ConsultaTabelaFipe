@@ -86,20 +86,13 @@ public class Principal {
     }
 
     public String getTypeVehicle (int vehicleTypeCode){
-        String vehicleType = "";
-        switch (vehicleTypeCode){
-            case 1:
-                vehicleType = "carros";
-                break;
-            case 2:
-                vehicleType = "motos";
-                break;
-            case 3:
-                vehicleType = "caminhoes";
-                break;
-        }
 
-        return vehicleType;
+        return switch (vehicleTypeCode){
+            case 1 -> "carros";
+            case 2 -> "motos";
+            case 3 -> "caminhoes";
+            default -> "";
+        };
     }
 
     public void printSelectedVehicle (List<VehiclesData> vehiclesData){
